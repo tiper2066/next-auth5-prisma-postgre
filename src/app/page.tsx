@@ -8,12 +8,12 @@ export default async function Home() {
             {session ? (
                 <>
                     <p>당신은 {session.user?.name} 이름으로 로그인했음</p>
-                    <Link href='/api/auth/signout'>Sign out</Link>
+                    <Link href='/logout'>Sign out</Link>
                 </>
             ) : (
                 <>
                     <p>로그인하지 않았음</p>
-                    <Link href='/api/auth/signin'>Sign in</Link>
+                    <Link href='/login'>Sign in</Link>
                 </>
             )}
         </div>
